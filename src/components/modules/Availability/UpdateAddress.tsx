@@ -35,7 +35,7 @@ import {
 const addressSchema = z.object({
   street: z.string().min(2, "Street address is required"),
   city: z.string().min(2, "City is required"),
-  state: z.string().min(2, "State is required").max(2, "Use 2-letter state code"),
+  state: z.string().min(2, "State is required"),
   zip: z.string().min(5, "ZIP code is required"),
   type: z.enum(["DFW_ESTIMATE", "STANDARD_ESTIMATE"]),
 });
@@ -182,7 +182,7 @@ const UpdateAddress = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
                   <FormItem>
                     <FormLabel className="text-gray-700 dark:text-gray-300 font-medium">State</FormLabel>
                     <FormControl>
-                      <Input className="bg-gray-50 dark:bg-zinc-900 h-12 rounded-xl uppercase" maxLength={2} placeholder="e.g. TX" {...field} />
+                      <Input className="bg-gray-50 dark:bg-zinc-900 h-12 rounded-xl" placeholder="e.g. Texas" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

@@ -252,13 +252,12 @@ export default function AvailabilitiesList() {
                       <Label>State</Label>
                       <Input
                         name="state"
-                        placeholder="e.g. TX"
+                        placeholder="e.g. Texas"
                         defaultValue="TX"
                         value={formData.state}
                         onChange={handleFormChange}
                         required
-                        maxLength={2}
-                        className="bg-gray-50 dark:bg-zinc-900 uppercase"
+                        className="bg-gray-50 dark:bg-zinc-900"
                       />
                     </div>
                   </div>

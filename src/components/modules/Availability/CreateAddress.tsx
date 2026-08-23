@@ -174,9 +174,8 @@ export default function CreateAddress() {
                       <Label className="text-gray-700 dark:text-gray-300 font-medium">State</Label>
                       <FormControl>
                         <Input 
-                          placeholder="TX" 
-                          className="bg-gray-50 dark:bg-zinc-900 h-12 rounded-xl border-gray-200 dark:border-zinc-800 focus-visible:ring-[#1BAE70] uppercase"
-                          maxLength={2}
+                          placeholder="e.g. Texas" 
+                          className="bg-gray-50 dark:bg-zinc-900 h-12 rounded-xl border-gray-200 dark:border-zinc-800 focus-visible:ring-[#1BAE70]"
                           {...field} 
                         />
                       </FormControl>
