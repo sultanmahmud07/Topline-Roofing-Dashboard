@@ -74,7 +74,7 @@ export default function AddStateModal({ isOpen, onOpenChange, stateToEdit }: Add
 
     const payload = {
       state: formData.state,
-      zip: formData.zip || undefined,
+      zip: formData.zip,
       type: formData.type,
     };
 
